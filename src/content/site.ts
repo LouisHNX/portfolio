@@ -23,7 +23,7 @@ export type Project = {
   description: Localized
   stack: string[]
   /** Public link. Leave out when there is none. */
-  link?: { url: string; label: string }
+  link?: { url: string; label: Localized }
 }
 
 export type Education = {
@@ -151,6 +151,10 @@ export const site = {
           fr: 'Une application de finances personnelles que je développe sur mon temps libre, pour suivre ses dépenses et ses transactions, avec mode clair et mode sombre.',
         },
         stack: ['TypeScript', 'React', 'Express', 'Prisma'],
+        link: {
+          url: 'https://finy-production.up.railway.app/',
+          label: { en: 'Live app', fr: "Voir l'application" },
+        },
       },
       {
         name: 'Trouve ton pinard',
@@ -168,7 +172,7 @@ export const site = {
           fr: 'Une application full-stack qui recrée un calendrier interactif pour les managers et les employés, pour gagner en productivité.',
         },
         stack: ['React', 'Chakra UI', 'Sass', 'Zustand', 'Docker'],
-        link: { url: 'https://gitlab.com/deraone/deraone', label: 'GitLab' },
+        link: { url: 'https://gitlab.com/deraone/deraone', label: { en: 'GitLab', fr: 'GitLab' } },
       },
     ] satisfies Project[],
     other: [
@@ -179,7 +183,7 @@ export const site = {
           fr: 'Une application mobile pour scanner des produits et obtenir un score écologique selon leur origine et la localisation du client.',
         },
         stack: ['React Native', 'Expo', 'Symfony'],
-        link: { url: 'https://gitlab.com/howfair-project/app', label: 'GitLab' },
+        link: { url: 'https://gitlab.com/howfair-project/app', label: { en: 'GitLab', fr: 'GitLab' } },
       },
       {
         name: 'Solid NFT Plugin',

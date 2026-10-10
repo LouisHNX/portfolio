@@ -27,9 +27,9 @@ function ProjectCard({ project, lang, dict, featured = false }: CardProps) {
           className="text-link mt-1 self-start"
         >
           <span className="sr-only">
-            {project.name} {dict.projects.on}{' '}
+            {project.name}:{' '}
           </span>
-          {project.link.label}
+          {project.link.label[lang]}
           <span aria-hidden="true"> ↗</span>
           <span className="sr-only"> ({dict.a11y.newTab})</span>
         </a>
