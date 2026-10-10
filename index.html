@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Sends visitors to /fr or /en from their browser language. English is the fallback. -->
+    <script>
+      ;(function () {
+        var preferred = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || 'en']
+        var target = 'en'
+        for (var i = 0; i < preferred.length; i++) {
+          var code = String(preferred[i]).toLowerCase().slice(0, 2)
+          if (code === 'fr' || code === 'en') {
+            target = code
+            break
+          }
+        }
+        // Old /Projects/... links arrive as /?to=projects.
+        var to = /[?&]to=([a-z]+)/.exec(location.search)
+        location.replace('/' + target + '/' + (to ? '#' + to[1] : location.hash))
+      })()
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url=/en/" /></noscript>
+  </head>
+  <body>
+    <p><a href="/en/">English</a> · <a href="/fr/" lang="fr">Français</a></p>
+  </body>
+</html>

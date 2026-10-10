@@ -1,0 +1,7 @@
+{
+  "framework": "vite",
+  "trailingSlash": true,
+  "redirects": [
+    { "source": "/Projects/:path*", "destination": "/?to=projects", "permanent": false }
+  ]
+}

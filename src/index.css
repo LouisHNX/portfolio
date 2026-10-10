@@ -1,0 +1,120 @@
+@import 'tailwindcss';
+
+:root {
+  --paper: #f8f6f1;
+  --ink: #18211c;
+  --soft: #5f5d55;
+  --line: #dedad0;
+  --dot: #cfc9ba;
+  --accent: #1d5a41;
+  --accent-ink: #f4f6ee;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --paper: #151513;
+    --ink: #eae7de;
+    --soft: #a6a398;
+    --line: #2d2c28;
+    --dot: #383731;
+    --accent: #86cfa6;
+    --accent-ink: #0f1713;
+    color-scheme: dark;
+  }
+}
+
+:root[data-theme='dark'] {
+  --paper: #151513;
+  --ink: #eae7de;
+  --soft: #a6a398;
+  --line: #2d2c28;
+  --dot: #383731;
+  --accent: #86cfa6;
+  --accent-ink: #0f1713;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-soft: var(--soft);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --font-serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Figtree Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Consolas, monospace;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  /* Small uppercase label used for dates, tags and the section index. */
+  .label {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--soft);
+  }
+
+  /* Notebook dot grid behind the hero, fading out toward the text. */
+  .dot-grid {
+    background-image: radial-gradient(var(--dot) 1.2px, transparent 1.7px);
+    background-size: 22px 22px;
+    mask-image: linear-gradient(to right, transparent 25%, black 80%);
+  }
+
+  .text-link {
+    color: var(--accent);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+
+  .text-link:hover {
+    text-decoration-thickness: 2px;
+  }
+}
+
+/* The theme toggle shows the icon of the theme it switches to. */
+.theme-icon-sun {
+  display: none;
+}
+
+:root[data-theme='dark'] .theme-icon-sun {
+  display: block;
+}
+
+:root[data-theme='dark'] .theme-icon-moon {
+  display: none;
+}

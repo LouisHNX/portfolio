@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "title": "Louis Garrido · Full-Stack Developer",
+    "description": "Louis Garrido, full-stack TypeScript developer based in Montpellier and Lyon. Production web applications with React and Node.js, and web development teaching for schools.",
+    "ogAlt": "Louis Garrido, Full-Stack Developer, Montpellier / Lyon"
+  },
+  "a11y": {
+    "skip": "Skip to content",
+    "sections": "Sections",
+    "language": "Language",
+    "switchLanguage": "Version française",
+    "toggleTheme": "Switch between light and dark theme",
+    "newTab": "opens in a new tab",
+    "stack": "Technologies"
+  },
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "teaching": "Teaching",
+    "education": "Education & skills",
+    "contact": "Contact"
+  },
+  "hero": {
+    "contact": "Contact",
+    "cv": "Download CV",
+    "cvHint": "PDF"
+  },
+  "projects": {
+    "other": "Other projects",
+    "on": "on"
+  },
+  "education": {
+    "education": "Education",
+    "skills": "Skills",
+    "languages": "Languages"
+  },
+  "contact": {
+    "intro": "The easiest way to reach me is by email or on LinkedIn.",
+    "email": "Email",
+    "linkedin": "LinkedIn",
+    "linkedinLabel": "Louis Garrido on LinkedIn"
+  }
+}
