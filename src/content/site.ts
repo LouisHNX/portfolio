@@ -169,8 +169,8 @@ export const site = {
         name: 'Daymark',
         kind: { en: 'Formerly DeraOne', fr: 'Anciennement DeraOne' },
         description: {
-          en: 'A multi-company field-service SaaS for scheduling interventions across customer sites: cleaning, maintenance, security, property management. Admins plan and assign work, technicians file reports with photos and an on-screen customer signature. I led the rebrand from DeraOne: new positioning, brand system and design migration, with a drag-and-drop calendar and a bilingual landing page.',
-          fr: "Un SaaS multi-entreprises de gestion d'interventions sur sites clients : nettoyage, maintenance, sécurité, gestion immobilière. Les admins planifient et assignent, les techniciens remplissent leurs rapports avec photos et signature client sur écran. J'ai mené le rebranding depuis DeraOne : nouveau positionnement, identité de marque et migration du design, avec un calendrier en glisser-déposer et une landing page bilingue.",
+          en: 'A field-service SaaS to schedule interventions across customer sites, with reports, photos and on-screen signatures. I led its rebrand from DeraOne.',
+          fr: "Un SaaS de gestion d'interventions sur sites clients, avec rapports, photos et signature sur écran. J'ai mené son rebranding depuis DeraOne.",
         },
         stack: ['React', 'TypeScript', 'Vite', 'Tailwind', 'shadcn/ui', 'Node.js', 'SQL'],
         link: {
