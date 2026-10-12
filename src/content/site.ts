@@ -166,12 +166,13 @@ export const site = {
         stack: ['React Native'],
       },
       {
-        name: 'DeraOne',
+        name: 'Daymark',
+        kind: { en: 'Formerly DeraOne', fr: 'Anciennement DeraOne' },
         description: {
-          en: 'A full-stack application that recreates an interactive calendar for managers and employees, for better productivity.',
-          fr: 'Une application full-stack qui recrée un calendrier interactif pour les managers et les employés, pour gagner en productivité.',
+          en: 'A multi-company field-service SaaS for scheduling interventions across customer sites: cleaning, maintenance, security, property management. Admins plan and assign work, technicians file reports with photos and an on-screen customer signature. I led the rebrand from DeraOne: new positioning, brand system and design migration, with a drag-and-drop calendar and a bilingual landing page.',
+          fr: "Un SaaS multi-entreprises de gestion d'interventions sur sites clients : nettoyage, maintenance, sécurité, gestion immobilière. Les admins planifient et assignent, les techniciens remplissent leurs rapports avec photos et signature client sur écran. J'ai mené le rebranding depuis DeraOne : nouveau positionnement, identité de marque et migration du design, avec un calendrier en glisser-déposer et une landing page bilingue.",
         },
-        stack: ['React', 'Chakra UI', 'Sass', 'Zustand', 'Docker'],
+        stack: ['React', 'TypeScript', 'Vite', 'Tailwind', 'shadcn/ui', 'Node.js', 'SQL'],
         link: { url: 'https://gitlab.com/deraone/deraone', label: { en: 'GitLab', fr: 'GitLab' } },
       },
     ] satisfies Project[],
