@@ -173,7 +173,10 @@ export const site = {
           fr: "Un SaaS multi-entreprises de gestion d'interventions sur sites clients : nettoyage, maintenance, sécurité, gestion immobilière. Les admins planifient et assignent, les techniciens remplissent leurs rapports avec photos et signature client sur écran. J'ai mené le rebranding depuis DeraOne : nouveau positionnement, identité de marque et migration du design, avec un calendrier en glisser-déposer et une landing page bilingue.",
         },
         stack: ['React', 'TypeScript', 'Vite', 'Tailwind', 'shadcn/ui', 'Node.js', 'SQL'],
-        link: { url: 'https://github.com/LouisHNX/daymark', label: { en: 'GitHub', fr: 'GitHub' } },
+        link: {
+          url: 'https://daymark-prod.up.railway.app/',
+          label: { en: 'Live app', fr: "Voir l'application" },
+        },
       },
     ] satisfies Project[],
     other: [
