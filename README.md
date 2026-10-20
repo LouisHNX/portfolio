@@ -2,7 +2,7 @@
 
 Personal site of Louis Garrido, full-stack developer. One page, in English (`/en/`) and French (`/fr/`), with light and dark themes.
 
-Live: https://louisgarrido-xyz-v2.vercel.app/
+Live: https://louisgarrido.fr/
 
 Built with React 19, Vite, TypeScript and Tailwind CSS 4. No framework and no router: the build produces three static HTML pages (`/`, `/en/`, `/fr/`) and one JavaScript bundle.
 

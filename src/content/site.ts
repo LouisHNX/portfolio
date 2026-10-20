@@ -38,7 +38,7 @@ export type SkillGroup = {
 }
 
 export const site = {
-  url: 'https://louisgarrido-xyz-v2.vercel.app',
+  url: 'https://louisgarrido.fr',
   name: 'Louis Garrido',
   title: { en: 'Full-Stack Developer', fr: 'Développeur full-stack' } as Localized,
   location: { en: 'Montpellier / Lyon, France', fr: 'Montpellier / Lyon' } as Localized,
