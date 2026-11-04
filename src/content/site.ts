@@ -157,6 +157,19 @@ export const site = {
         },
       },
       {
+        name: 'Vert',
+        kind: { en: 'Side project · pronounced /vɛʁ/', fr: 'Projet personnel · prononcé /vɛʁ/' },
+        description: {
+          en: 'A web app for trail runners. The name plays on "vert": French for green, and trail slang for vertical gain.',
+          fr: "Une application web pour les traileurs. Son nom joue sur « vert » : la couleur de la nature, et le dénivelé en jargon trail anglophone.",
+        },
+        stack: ['TypeScript', 'React'],
+        link: {
+          url: 'https://vert-app.up.railway.app/',
+          label: { en: 'Live app', fr: "Voir l'application" },
+        },
+      },
+      {
         name: 'Trouve ton pinard',
         kind: { en: "Master's prototype", fr: 'Prototype de master' },
         description: {
